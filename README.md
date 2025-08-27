@@ -1,7 +1,7 @@
 # Challenge de IA para Contadores - Resumen Ejecutivo
 
 ## 🎯 Objetivo Principal
-Desarrolle un chatbot inteligente conectado a Twitter de ARCA (Administración Federal de Ingresos Públicos Argentina) para generar reportes contables automatizados y distribuirlos vía Slack.
+Desarrolle un chatbot inteligente conectado a Twitter de ARCA (Agencia de Recaudación y Control Aduanero) para generar reportes contables automatizados y distribuirlos vía Slack.
 
 ## 📋 Challenge
 
@@ -93,7 +93,6 @@ Los contadores necesitan mantenerse actualizados con las normativas fiscales y c
 
 ### 1. **Implementación de IA (40%)**
 - Calidad de procesamiento de texto con LLMs
-- Efectividad del sistema RAG
 - Precisión en clasificación y extracción de entidades
 - Creatividad en uso de prompts y fine-tuning
 
@@ -129,24 +128,6 @@ SLACK_WEBHOOK_URL=url_del_canal
 SCRAPING_INTERVAL_MINUTES=15
 MAX_TWEETS_PER_RUN=10
 ```
-### Prompt Template para ChatGPT
-```
-Eres un asistente especializado en normativa fiscal argentina. 
-Analiza este tweet de @ARCA_Oficial y genera un resumen ejecutivo para contadores:
-
-Tweet: "{tweet_content}"
-Fecha: "{tweet_date}"
-
-Responde en formato JSON:
-{
-  "relevancia": "alta/media/baja",
-  "categoria": "normativa/deadline/comunicado/otro",
-  "resumen": "resumen en 2-3 líneas",
-  "accion_requerida": "qué debe hacer el contador",
-  "urgencia": "urgente/normal/informativo",
-  "fecha_limite": "si aplica, extraer fecha"
-}
-```
 
 ## 📈 Casos de Uso Específicos
 
@@ -174,7 +155,7 @@ Genera newsletter contable → Programa envío
 ## 🔧 Configuración de Evaluación
 
 ### Datos de Prueba
-- Histórico de tweets de @ARCA_Oficial (últimos 10 tweets)
+- Histórico de tweets de x.com/arca_informa (últimos 10 tweets)
 - Casos de test con diferentes tipos de comunicados
 - Métricas de precisión en clasificación
 
