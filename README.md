@@ -161,7 +161,6 @@ Genera newsletter contable → Programa envío
 
 ### Métricas de Éxito
 - **Precisión:** >85% en clasificación de relevancia
-- **Recall:** >90% en detección de deadlines críticos  
 - **Latencia:** <1 minutos desde tweet hasta Slack
 - **Satisfacción:** Feedback positivo en format de resúmenes
 
