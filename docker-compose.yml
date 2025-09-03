@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  scraper:
+    image: node:22-slim
+
+    container_name: twitter_scraper
+    working_dir: /home/node
+    volumes:
+        - .:/home/node
+    #    - /usr/src/app/node_modules:/usr/src/app/node_modules
+    #command: sh -c "npm install && npx playwright install --with-deps chromium && npm install openai && npm run dev"
+    command: sh -c "npm install &&  npm install openai  dotenv better-sqlite3 node-cron && npx playwright install --with-deps chromium && npm run dev"
+    # Playwright necesita dependencias extra para Chromium
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    environment:
+      - NODE_ENV=development
