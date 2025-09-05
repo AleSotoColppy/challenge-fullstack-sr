@@ -89,6 +89,10 @@ Los contadores necesitan mantenerse actualizados con las normativas fiscales y c
 - **Playwright browsers** incluidos en container
 - **Environment variables** para API keys
 
+## 🏁 Que esperamos una vez terminado el challenge 🏁
+un repositorio con codigo del challenge (publico)
+un readme detallado con las instrucciones para ejecutarlo
+
 ## 📊 Criterios de Evaluación del Challenge
 
 ### 1. **Implementación de IA (40%)**
@@ -114,7 +118,7 @@ Los contadores necesitan mantenerse actualizados con las normativas fiscales y c
 ## 🎯 Entregables Específicos (Con Playwright)
 
 ### Core Features (MVP)
-1. **Playwright Scraper:** Script que visita twitter.com/ARCA_Oficial cada 15 minutos
+1. **Playwright Scraper:** Script que visita x.com/ARCA_informa cada 15 minutos
 2. **Tweet Detector:** Lógica para identificar tweets nuevos vs ya procesados
 3. **OpenAI Processor:** Función que envía tweets a ChatGPT con prompt específico
 4. **Slack Sender:** Bot que envía resúmenes formateados al canal
@@ -152,30 +156,3 @@ Filtra por relevancia → Agrupa por temas →
 Genera newsletter contable → Programa envío
 ```
 
-## 🔧 Configuración de Evaluación
-
-### Datos de Prueba
-- Histórico de tweets de x.com/arca_informa (últimos 10 tweets)
-- Casos de test con diferentes tipos de comunicados
-- Métricas de precisión en clasificación
-
-### Métricas de Éxito
-- **Precisión:** >85% en clasificación de relevancia
-- **Latencia:** <1 minutos desde tweet hasta Slack
-- **Satisfacción:** Feedback positivo en format de resúmenes
-
-## 💡 Valor Agregado para Contadores
-
-### Beneficios Inmediatos
-- **Ahorro de tiempo:** 3-5 horas semanales por contador
-- **Compliance automático:** Cero deadlines perdidos
-- **Insights proactivos:** Anticipación a cambios normativos
-
-### ROI Medible
-- Reducción de multas por incumplimientos
-- Mejora en productividad del equipo contable
-- Ventaja competitiva con información temprana
-
----
-
-*Este challenge combina lo mejor del desarrollo full-stack tradicional con cutting-edge AI, creando una solución real que agregará valor inmediato a profesionales contables.*
